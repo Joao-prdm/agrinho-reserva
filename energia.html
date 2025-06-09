@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  /* Estilo da seção de cabeçalho */
+  .cabecalho {
+    color: #fff; /* Texto branco */
+    background-color: #747974; /* Cor de fundo azul */
+    text-align: center;
+    padding: 15px 0; /* Diminui o padding para ajustar o tamanho */
+    margin: 0; /* Sem margem */
+    position: absolute; /* Posicionamento absoluto para ficar no topo */
+    top: 0; /* Alinha no topo */
+    width: 100%; /* Ocupa toda a largura */
+    z-index: 10; /* Garante que fique acima dos outros elementos */
+  }
+
+  /* Animação de fade-in e slide-up */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Animação tipo minhoca (subindo e descendo com pausa) */
+  @keyframes wormEffect {
+    0% {
+      transform: translateY(0); /* Inicial na posição original */
+    }
+    25% {
+      transform: translateY(-10px); /* Move para cima */
+    }
+    50% {
+      transform: translateY(10px); /* Move para baixo */
+    }
+    75% {
+      transform: translateY(-10px); /* Move para cima novamente */
+    }
+    100% {
+      transform: translateY(0); /* Volta à posição original */
+    }
+  }
+
+  /* Estilo para cada letra individualmente */
+  .cabecalho h1 span,
+  .cabecalho h3 span {
+    display: inline-block;
+    animation: wormEffect 1.5s ease-in-out 1 forwards, pauseEffect 3s infinite; /* Adicionando pausa após o efeito */
+  }
+
+  /* Efeito de pausa entre animações */
+  @keyframes pauseEffect {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .cabecalho h1 span:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .cabecalho h1 span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  .cabecalho h1 span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  .cabecalho h1 span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+
+  .cabecalho h1 span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+
+  .cabecalho h1 span:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+
+  .cabecalho h1 span:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+
+  .cabecalho h1 span:nth-child(8) {
+    animation-delay: 0.7s;
+  }
+
+  .cabecalho h1 span:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+
+  .cabecalho h1 span:nth-child(10) {
+    animation-delay: 0.9s;
+  }
+
+  .cabecalho h3 span:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .cabecalho h3 span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  .cabecalho h3 span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  .cabecalho h3 span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+
+  .cabecalho h3 span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+
+  .cabecalho h3 span:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+
+  .cabecalho h3 span:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+
+  /* Estilizando o h1 */
+  .cabecalho h1 {
+    font-size: 30px; /* Tamanho da fonte ajustado */
+    margin: 0;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(50px); /* Começa movido para baixo */
+    animation: fadeInUp 1.5s forwards 0.5s;
+  }
+
+  /* Estilizando o h3 */
+  .cabecalho h3 {
+    font-size: 18px; /* Tamanho da fonte ajustado */
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(50px); /* Começa movido para baixo */
+    animation: fadeInUp 1.5s forwards 1s;
+  }
+
+  /* Adicionando margem ao conteúdo para evitar sobreposição */
+  .content {
+    margin-top: 100px; /* Ajusta a margem superior do conteúdo */
+  }
+</style>
+
+<body>
+  <!-- Apresentação do tema -->
+  <section class="cabecalho">
+    <h1>
+      <span>A</span>
+      <span>G</span>
+      <span>R</span>
+      <span>I</span>
+      <span>N</span>
+      <span>H</span>
+      <span>O</span>
+      <span> </span>
+      <span>2</span>
+      <span>0</span>
+      <span>2</span>
+      <span>5</span>
+    </h1>
+    <h3>
+      <span>F</span>
+      <span>e</span>
+      <span>s</span>
+      <span>t</span>
+      <span>e</span>
+      <span>j</span>
+      <span>a</span>
+      <span>n</span>
+      <span>d</span>
+      <span>o</span>
+      <span> </span>
+      <span>C</span>
+      <span>o</span>
+      <span>n</span>
+      <span>e</span>
+      <span>x</span>
+      <span>ã</span>
+      <span>o</span>
+      <span> </span>
+      <span>C</span>
+      <span>a</span>
+      <span>m</span>
+      <span>p</span>
+      <span>o</span>
+      <span> </span>
+      <span>C</span>
+      <span>i</span>
+      <span>d</span>
+      <span>a</span>
+      <span>d</span>
+      <span>e</span>
+    </h3>
+  </section>
+
+  <!-- Cabeçalho do site -->
+  <nav class="navbar navbar-expand-lg bg-success">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Conteúdo da página -->
+  <div class="content">
+    <!-- Coloque o conteúdo aqui -->
+  </div>
+</body>
+
+<div class="container text-center mt-4">
+  <div class="d-flex justify-content-center">
+    <!-- Verde -->
+    <a href="index.html">
+  <button type="button" class="light-sweep-button green m-2">
+    <span class="house">🏠</span> Página Inicial <span class="house">🏠</span>
+  </button>
+</a>
+
+<style>
+  .light-sweep-button {
+    position: relative;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    color: white !important;
+    background-color: #28a745; /* fallback */
+  }
+
+  .light-sweep-button.green {
+    background-color: #28a745 !important; /* verde fixo */
+  }
+
+  .light-sweep-button.green::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: rotate(25deg) translateX(-100%);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+    border-radius: 8px;
+    z-index: 0;
+  }
+
+  .light-sweep-button.green:hover::before {
+    transform: rotate(25deg) translateX(100%);
+  }
+
+  .light-sweep-button.green:hover {
+    box-shadow: 0 8px 20px rgba(57, 255, 20, 0.7);
+    transform: translateY(-5px);
+  }
+
+  .light-sweep-button > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  @keyframes housePulse {
+    0%, 100% {
+      transform: scale(1);
+      filter: drop-shadow(0 0 3px limegreen);
+    }
+    50% {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 6px limegreen);
+    }
+  }
+
+  .house {
+    display: inline-block;
+    animation: housePulse 2s infinite ease-in-out;
+  }
+</style>
+
+    <!-- Cinza -->
+   <a href="energia.html">
+  <button type="button" class="btn btn-secondary m-2 fancy-button">
+    <span class="flash">⚡︎</span> Energia Rural <span class="flash">⚡︎</span>
+  </button>
+</a>
+
+<style>
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+      text-shadow: 0 0 8px #ffd700, 0 0 15px #ffea00;
+      color: #ffd700;
+    }
+    50% {
+      opacity: 0.6;
+      text-shadow: none;
+      color: #ffea00;
+    }
+  }
+  
+  @keyframes swing {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-10deg); }
+  }
+
+  .fancy-button {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    color: #ddd;
+    background: linear-gradient(270deg, #444, #666, #444);
+    background-size: 600% 600%;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    animation: gradientBG 10s ease infinite;
+  }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .fancy-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: rotate(25deg) translateX(-100%);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+  }
+
+  .fancy-button:hover::before {
+    transform: rotate(25deg) translateX(100%);
+  }
+
+  .fancy-button:hover {
+    box-shadow:
+      0 2px 4px #ffd70080,
+      2px 0 4px #ffea0080,
+      -2px 0 4px #ffd70080,
+      0 4px 6px #ffea0080;
+    transform: translateY(-5px);
+    color: #fff;
+    text-shadow: none;
+  }
+
+  .fancy-button .flash {
+    display: inline-block;
+    animation: pulse 2s infinite, swing 4s infinite ease-in-out;
+    color: #ffd700;
+  }
+</style>
+    <!-- Azul -->
+  <a href="agua.html">
+  <button type="button" class="btn btn-primary m-2 water-button">
+    <span class="wave-icon">💧</span> Acessibilidade a Água <span class="wave-icon">💧</span>
+  </button>
+</a>
+
+<style>
+  /* Animação brilho suave + leve movimento nos ícones */
+  @keyframes waterPulse {
+    0%, 100% {
+      opacity: 1;
+      text-shadow: 0 0 10px #00bfff, 0 0 20px #00e5ff;
+    }
+    50% {
+      opacity: 0.7;
+      text-shadow: none;
+    }
+  }
+
+  @keyframes waveSwing {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  /* Animação de fundo com ondas leves (gradiente azul animado) */
+  @keyframes waveBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .water-button {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    color: #d0f0ff;
+    background: linear-gradient(270deg, #005f99, #0099cc, #005f99);
+    background-size: 600% 600%;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    animation: waveBG 12s ease infinite;
+  }
+
+  /* Brilho sutil que passa ao passar o mouse */
+  .water-button::before {
+    content: '';
+    position: absolute;
+    top: -60%;
+    left: -60%;
+    width: 220%;
+    height: 220%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: rotate(25deg) translateX(-100%);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+  }
+
+  .water-button:hover::before {
+    transform: rotate(25deg) translateX(100%);
+  }
+
+  /* Levantar o botão no hover */
+  .water-button:hover {
+    box-shadow: 0 8px 25px rgba(0, 191, 255, 0.8);
+    transform: translateY(-6px);
+    color: #e0ffff;
+  }
+
+  /* Ícones com brilho e movimento de onda */
+  .water-button .wave-icon {
+    display: inline-block;
+    animation: waterPulse 3s infinite ease-in-out, waveSwing 4s infinite ease-in-out;
+    color: #00bfff;
+    margin: 0 6px;
+  }
+</style>
+
+    <!-- Amarelo -->
+    <a href="producao.html">
+      <button type="button" class="btn btn-warning m-2">🚜 Produção 🚜</button>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+  <!-- Primeira seção -->
+  <div class="container">
+  <div class="row pt-5 mb-4"> <!-- adicionei mb-4 para margem embaixo -->
+    <div class="col">
+      <h2 style="margin-bottom: 15px;">O que podemos falar sobre a energia rural?</h2>
+      <p class="alinha" style="margin-bottom: 40px; text-align: justify;">
+        A energia rural é essencial para o crescimento sustentável das áreas agrícolas e o bem-estar das comunidades do campo.
+        Ela vai muito além de simplesmente iluminar residências: é um fator estratégico para mecanizar a produção, irrigar plantações,
+        conservar alimentos e melhorar a qualidade de vida dos trabalhadores rurais. Nas últimas décadas, o acesso à eletricidade no meio rural
+        tem crescido, mas ainda há regiões que enfrentam limitações, seja pela distância dos grandes centros urbanos ou pelos custos de implantação
+        da infraestrutura elétrica. Nesses casos, fontes alternativas de energia, como a solar e a eólica, têm se mostrado soluções viáveis,
+        econômicas e sustentáveis. Além disso, o uso eficiente da energia contribui para a redução de desperdícios e dos impactos ambientais.
+        Tecnologias modernas, como bombas solares para irrigação ou biodigestores que transformam resíduos orgânicos em energia, mostram como o campo pode inovar
+        e se tornar autossuficiente. Investir em energia rural é investir no futuro do agronegócio, na segurança alimentar e na preservação ambiental.
+        É garantir que o campo continue produzindo com qualidade, respeitando os recursos naturais e promovendo o desenvolvimento social das populações que vivem da terra.
+      </p>
+    </div>
+  </div>
+
+  
+
+
+<div class="container py-5">
+  <h2 class="text-center mb-4">Fontes de Energia Sustentável no Campo</h2>
+  <div class="row justify-content-center gap-4">
+
+    <!-- Card 1 - Energia Eólica -->
+<div class="card shadow-lg" style="width: 30rem;">
+  <img src="./assets/image/cata.jpg" class="card-img-top" alt="Energia Eólica" style="height: 200px; object-fit: cover;">
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title">Energia Eólica no Campo</h5>
+    <p class="card-text">A energia eólica ajuda produtores rurais a reduzirem custos com eletricidade, aproveitando o vento como fonte limpa e inesgotável.</p>
+    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalEolica">Saiba mais</button>
+  </div>
+</div>
+
+<!-- Card 2 - Energia Solar -->
+<div class="card shadow-lg" style="width: 30rem;">
+  <img src="./assets/image/spigjnsfdipuh.jpg" class="card-img-top" alt="Energia Solar" style="height: 200px; object-fit: cover;">
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title">Energia Solar no Campo</h5>
+    <p class="card-text">A energia solar no meio rural promove autonomia energética, irrigação eficiente e redução de impactos ambientais.</p>
+    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalSolar">Saiba mais</button>
+  </div>
+</div>
+
+
+
+<!-- Modal Energia Eólica -->
+<div class="modal fade" id="modalEolica" tabindex="-1" aria-labelledby="modalEolicaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEolicaLabel">Energia Eólica no Campo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          A energia eólica é uma das fontes renováveis mais promissoras para áreas rurais. Seu uso no campo proporciona economia na conta de luz, autonomia energética e uma alternativa sustentável em locais afastados da rede elétrica tradicional.
+          Pequenas turbinas eólicas podem ser instaladas em propriedades agrícolas, aproveitando a força dos ventos para gerar energia limpa. Isso reduz os impactos ambientais, além de estimular o desenvolvimento de tecnologias verdes no setor agrícola.
+        </p>
+        <img src="./assets/image/cata.jpg" class="img-fluid rounded mt-3" alt="Imagem energia eólica">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Energia Solar -->
+<div class="modal fade" id="modalSolar" tabindex="-1" aria-labelledby="modalSolarLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSolarLabel">Energia Solar no Campo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          A energia solar é uma alternativa eficiente e sustentável para o meio rural. A instalação de painéis solares permite a geração de energia elétrica para residências, irrigação, cercas elétricas e equipamentos agrícolas, mesmo em regiões remotas.
+          Além de reduzir a dependência de combustíveis fósseis, os sistemas solares fotovoltaicos ajudam a diminuir os custos operacionais e promovem o uso consciente dos recursos naturais, colaborando para um agronegócio mais verde.
+        </p>
+        <img src="./assets/image/spigjnsfdipuh.jpg" class="img-fluid rounded mt-3" alt="Imagem energia solar">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Seções complementares -->
+<section class="conteudo-complementar">
+
+  <!-- Linha do tempo -->
+  <div class="secao">
+    <h2 class="titulo-centralizado">Linha do Tempo da Energia no Campo</h2>
+    <ul class="timeline">
+      <li><strong>1970</strong> – Primeiras pesquisas sobre energia solar aplicada na agricultura.</li>
+      <li><strong>1980</strong> – Desenvolvimento dos primeiros sistemas eólicos residenciais.</li>
+      <li><strong>2000</strong> – Popularização de painéis solares em áreas rurais.</li>
+      <li><strong>2015</strong> – Uso de bombas solares para irrigação sustentável.</li>
+      <li><strong>2023</strong> – Avanços em turbinas eólicas para pequenas propriedades.</li>
+    </ul>
+  </div>
+
+  <!-- Simulador de Impacto -->
+  <div class="secao">
+    <h2 class="titulo-centralizado">Simulador de Impacto Ambiental</h2>
+    <div class="simulador">
+      <label for="energia">Energia consumida (kWh/mês):</label>
+      <input type="number" id="energia" placeholder="Ex: 500">
+      <button onclick="calcularImpacto()">Calcular impacto</button>
+      <p id="resultado"></p>
+    </div>
+  </div>
+
+  <!-- Você sabia? -->
+  <div class="secao">
+    <h2 class="titulo-centralizado">Você sabia?</h2>
+    <div class="cards-sabia">
+      <div class="card-sabia">A energia solar pode reduzir a conta de luz em até 90%.</div>
+      <div class="card-sabia">Turbinas eólicas geram energia até com ventos fracos.</div>
+      <div class="card-sabia">Energia renovável ajuda a preservar o solo e o meio ambiente.</div>
+      <div class="card-sabia">Biodigestores transformam resíduos em energia limpa.</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- CSS -->
+<style>
+.conteudo-complementar {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.titulo-centralizado {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #004d40;
+}
+
+.secao {
+  margin-bottom: 3rem;
+}
+
+/* Linha do tempo */
+.timeline {
+  list-style-type: none;
+  padding-left: 0;
+  border-left: 3px solid #00796b;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.timeline li {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: #00796b;
+  border-radius: 50%;
+}
+
+/* Simulador */
+.simulador {
+  text-align: center;
+}
+
+.simulador input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.simulador button {
+  padding: 0.5rem 1rem;
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.simulador button:hover {
+  background-color: #00796b;
+}
+
+.simulador p {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #004d40;
+}
+
+/* Você sabia? */
+.cards-sabia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-sabia {
+  background-color: #e0f2f1;
+  border-left: 5px solid #00796b;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  max-width: 300px;
+  color: #004d40;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+</style>
+
+<!-- JS do simulador -->
+<script>
+function calcularImpacto() {
+  const energia = document.getElementById('energia').value;
+  const resultado = document.getElementById('resultado');
+
+  if (energia && energia > 0) {
+    const co2 = energia * 0.5;
+    resultado.innerText = `Você pode reduzir aproximadamente ${co2.toFixed(1)} kg de CO₂ por mês usando energia renovável.`;
+  } else {
+    resultado.innerText = "Insira um valor válido.";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #106cc2;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Conteúdo da página -->
+  </main>
+
+  <footer>
+    <p style="margin: 0;">&copy; 2025 Agrinho - Todos os direitos reservados.</p>
+    <p style="margin: 0;">Juntos para o futuro da agricultura.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+
+  
+
+
